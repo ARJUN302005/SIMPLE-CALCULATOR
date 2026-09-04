@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: url(bg2.jpg);
-    
+
     background-size: cover;
     background-repeat: no-repeat;
     font-family: roboto, sans serif;
@@ -33,15 +33,15 @@ body {
     flex-direction: column;
     width: 400px;
     gap: 10px;
-    
+
 }
 
 .btn-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    
-    
+
+
 }
 
 .btn {
@@ -53,37 +53,43 @@ body {
     color: rgb(255, 255, 255);
     border: none;
     transition: all 0.2s ease;
-    
+
 }
-.btn:hover{
+
+.btn:hover {
     scale: 1.08;
     font-size: 27px;
 }
-.btn:active{
+
+.btn:active {
     scale: 0.8;
     font-size: 23px;
-    
+
 }
 
 .operator {
     background-color: var(--c1);
 }
-.operator:hover{
-    --c1:#4e4d4f;
+
+.operator:hover {
+    --c1: #4e4d4f;
     background-color: var(--c1);
 }
-.operator:active{
+
+.operator:active {
     background-color: #6d6c6f;
 }
 
-.fn{
-    background-color: var(--c2) ;
-}
-.fn:hover{
-    --c2:#504f51;
+.fn {
     background-color: var(--c2);
 }
-.fn:active{
+
+.fn:hover {
+    --c2: #504f51;
+    background-color: var(--c2);
+}
+
+.fn:active {
     background: #939295;
 }
 
@@ -92,11 +98,13 @@ body {
 .num {
     background-color: var(--c4);
 }
-.num:hover{
-    --c4:#4d4d4d;
+
+.num:hover {
+    --c4: #4d4d4d;
     background-color: var(--c4);
 }
-.num:active{
+
+.num:active {
     background-color: #a1a0a0;
 }
 
@@ -105,7 +113,7 @@ body {
     height: 70px;
     padding: 20px;
     width: 100%;
-    
+
     border-radius: 20px;
     text-align: end;
     border: none;
@@ -115,12 +123,53 @@ body {
     color: white;
     background-color: var(--c2);
 }
+
 @media only screen and (max-width:600px) {
-    .container{
+    .container {
         width: 300px;
     }
-    .btn{
+
+    .btn {
         height: 70px;
+        font-size: 20px;
+    }
+
+    .btn:hover {
+        scale: 1;
+        font-size: 20px;
+
+    }
+
+    .btn:active {
+        scale: 0.8;
+        font-size: 17px;
+    }
+
+    .fn:hover {
+
+        background-color: var(--c2);
+    }
+
+    .fn:active {
+        background: #939295;
+    }
+
+    .operator:hover {
+
+        background-color: var(--c1);
+    }
+
+    .operator:active {
+        background-color: #6d6c6f;
+    }
+
+    .num:hover {
+        --c4: #4d4d4d;
+        background-color: var(--c4);
+    }
+
+    .num:active {
+        background-color: #a1a0a0;
     }
 
 }
