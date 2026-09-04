@@ -167,7 +167,6 @@ body {
     .fn:hover,
     .operator:hover,
     .num:hover {
-        background-color: initial;
         transform: none;
     }
 
